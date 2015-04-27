@@ -1,14 +1,18 @@
 <div class="jumbotron">
-  <div class="left_header">
-    <h3>Connect with friends and the world around you on Fakebook.</h3>
-    <img src="*">See photos and updates from friends in News Feed.<br />
-    <img src="*">Share what's new in your life on your Timeline.<br />
-    <img src="*">Find more of what you're looking for with Graph Search.<br />
-  </div>
+  <% if user_signed_in? %>
+   # do something
+   <% else %>
+    <div class="left_header">
+      <h3>Connect with friends and the world around you on Fakebook.</h3>
+      <img src="*">See photos and updates from friends in News Feed.<br />
+      <img src="*">Share what's new in your life on your Timeline.<br />
+      <img src="*">Find more of what you're looking for with Graph Search.<br />
+    </div>
 
-  <div class="right_header">
-    <h2>Sign Up</h2>
-    <p>It's free and always will be.</p>
-  <%= link_to "Sign Up", "#", class: "btn btn-primary" %>
-  </div>
+    <div class="right_header">
+      <h2>Sign Up</h2>
+      <p>It's free and always will be.</p>
+    <%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %>
+    </div>
+  <% end %>
 </div>

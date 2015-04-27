@@ -1,1 +1,34 @@
+$navbar-default-bg:  #3b5998;
+$navbar-default-brand-color: white;
+$jumbotron-bg: #edf0f5;
+$navbar-default-link-color: #9daccb;
+$navbar-default-link-hover-color: #9daccb;
+$font-family-sans-serif: "lucida grande", tahoma, verdana, arial, sans-serif;  ;
+$navbar-height: 80px;
+$btn-primary-bg: #69a74e;
+
 @import 'bootstrap';
+
+.left_header {
+  display: inline-block;
+  padding: 42px 0 24px;
+  width: 565px;
+  height: auto;
+  margin-right: 15.999px;
+  vertical-align: top;
+}
+
+.right_header {
+  display: inline-block;
+  width: 399px;
+  height: auto;
+}
+
+.footcolor {
+  background-color: white;
+}
+
+.navbar-brand {
+  font-size: 50px;
+  font-weight: bold;
+}

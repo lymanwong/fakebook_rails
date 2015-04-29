@@ -15,12 +15,20 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Account Settings", edit_user_registration_path %></li>
-        <%= link_to "Log Out", destroy_user_session_path , method: :delete, class: "btn btn-default"%>
+        <table class="headerlinks">
+          <tr>
+            <th class="headerlinksth"><%= link_to "Home", root_path %></th>
+            <th class="headerlinksth"><%= link_to "About", about_path %></th>
+            <th class="headerlinksth"><%= link_to "Settings", edit_user_registration_path %></th>
+            <th><%= link_to "Log Out", destroy_user_session_path , method: :delete, class: "btn btn-default"%></th>
+          </tr>
+        </table>
       <% else %>
-        <%= link_to "Sign in", new_user_session_path , class: "btn btn-default"%>
+        <table class="headerlinks">
+          <tr>
+            <th><%= link_to "Sign in", new_user_session_path , class: "btn btn-default"%></th>
+          </tr>
+        </table>
       <% end %>
     </ul>
   </div><!-- /.navbar-collapse -->

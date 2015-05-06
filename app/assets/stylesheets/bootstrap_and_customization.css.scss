@@ -66,3 +66,16 @@ $btn-default-border: #2f477a;
   background-color: #5b74a8;
   border-color: #2f477a;
 }
+
+.footcolor{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:150px;   /* Height of the footer */
+   background:white;
+}
+
+.footformat{
+  padding-left: 10%;
+  font-size: 90%;
+}

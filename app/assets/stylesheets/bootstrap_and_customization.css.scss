@@ -37,11 +37,32 @@ $btn-default-border: #2f477a;
 }
 
 
-.headerlinks {
-  display: inline-block;
+.headerlinks{
+  display: inline;
   padding-top: 25px;
+  color: white;
+
 }
 
 .headerlinksth{
   padding-right: 20px;
+}
+
+.navbar-right {
+  padding-top: 25px;
+  font-size: 80%;
+}
+
+.checkbox {
+  margin-left: 30px;
+  color: #9daccb;
+}
+
+#user_remember_me{
+  margin-left: 1px;
+}
+
+.uibutton{
+  background-color: #5b74a8;
+  border-color: #2f477a;
 }

@@ -1,0 +1,22 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field headerlinks">
+    <%= f.label :email %>
+    <tr><%= f.email_field :email, autofocus: true %></tr>
+  </div>
+
+  <div class="field headerlinks">
+    <%= f.label :password %>
+    <tr><%= f.password_field :password, autocomplete: "off"%></tr>  </div>
+  <div class="actions headerlinks">
+    <%= f.submit "Log in", class:"btn uibutton" %><br>
+  </div>
+  <% if devise_mapping.rememberable? %>
+    <div class="field headerlinks">
+      <div class="checkbox">
+        <%= f.check_box :remember_me %>
+        <%= f.label :Keep_me_logged_in %>
+      </div>
+    </div>
+  <% end -%>
+
+<% end %>
